@@ -6,12 +6,29 @@ export const GetAllCompanys = () => {
     return (dispatch) => {
         dispatch(makeRequest());
         setTimeout(()=>{
-            axios.get("http://localhost:8000/company").then(res => {
+            fetch("http://localhost:8080/student/getAll"
+                //, {
+                // method: "GET",
+                // headers: {"Content-Type": "application/json"},
+                // body: JSON.stringify(student)
+            //}
+            ).then((res1) =>
+                res1.json()
+            ).then(responseJson => {
+                console.log(responseJson);
+                dispatch(getAllRequestSuccess(responseJson));
+            }).catch(err => {
+                dispatch(getAllRequestFail(err.message));
+            });
+
+            /*axios.get("http://localhost:8000/company").then(res => {
                 const _list = res.data;
                 dispatch(getAllRequestSuccess(_list));
             }).catch(err => {
                 dispatch(getAllRequestFail(err.message));
             });
+
+             */
         },1000)
 
     }
