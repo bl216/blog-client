@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5164d39-05fe-4fc0-a986-8c8e1063d6e2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js.bk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Company.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Company.js.bk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Action.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/ActionCreater.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/ActionCreater.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/ActionType.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/ActionType.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js.bk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.ts.bk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupProxy.js.bk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js.bk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webpack.config.js.bk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -82,7 +71,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Applications/GoLand.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external"
+    "ts.external.directory.path": "/Users/b-lee-local/App/blog-client/node_modules/typescript/lib"
   }
 }]]></component>
   <component name="RecentsManager">
