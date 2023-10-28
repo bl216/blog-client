@@ -1,4 +1,4 @@
-//import * as React from 'react';
+import React, { useState, useEffect } from "react";
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
@@ -17,20 +17,21 @@ import Footer from '../footer/form';
 //import post3 from './blog-post.3.md';
 
 const sections = [
-    { title: 'Technology', url: '#' },
-    { title: 'Design', url: '#' },
-    { title: 'Culture', url: '#' },
-    { title: 'Business', url: '#' },
-    { title: 'Politics', url: '#' },
-    { title: 'Opinion', url: '#' },
-    { title: 'Science', url: '#' },
-    { title: 'Health', url: '#' },
-    { title: 'Style', url: '#' },
-    { title: 'Travel', url: '#' },
+    { title: 'Software Engineering', url: '/se' },
+    { title: 'Travel', url: '/travel' },
+    { title: 'Canada', url: '/can' },
+    { title: 'Food', url: '/food' },
+    { title: 'Politics', url: '#section1' },
+    { title: 'Opinion', url: '#section2' },
+    { title: 'Science', url: '#section3' },
+    { title: 'Health', url: '#section4' },
+    { title: 'Style', url: '#section5' },
+    { title: 'Theme', url: '#section6' },
 ];
 
 const mainFeaturedPost = {
-    title: 'Title of a longer featured blog post',
+    //title: 'Title of a longer featured blog post',
+    title: 'http://localhost:8080/student/getAll',
     description:
         "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
     image: 'https://source.unsplash.com/random?wallpapers',
