@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducer from './reducer/index';
+import { BrowserRouter } from 'react-router-dom'
+import Counter from "./container/appContainer";
 
 // redux example... https://www.tutorialspoint.com/redux/redux_react_example.htm
 const store = createStore(
@@ -18,9 +20,12 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <Provider store={store}>
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>
+        <BrowserRouter>
+            <React.StrictMode>
+                <Counter/>
+                <App />
+            </React.StrictMode>
+        </BrowserRouter>
     </Provider>
 );
 

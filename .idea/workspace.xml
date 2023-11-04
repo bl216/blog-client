@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e5164d39-05fe-4fc0-a986-8c8e1063d6e2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/featuredPost/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/featuredPost/form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/main/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/main/form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/main/post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/main/post.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/mainFeaturedPost/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/mainFeaturedPost/form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/b-lee-local",
+    "last_opened_file_path": "/Users/b-lee-local/App/blog-client/src/component/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -76,11 +77,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/component/main" />
       <recent name="$PROJECT_DIR$/src/sagas" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/src/store" />
-      <recent name="$PROJECT_DIR$/src/component/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />

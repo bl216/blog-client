@@ -9,10 +9,11 @@ import CardMedia from '@mui/material/CardMedia';
 interface FeaturedPostProps {
     post: {
         date: string;
-        description: string;
+        post_content: string;
         image: string;
         imageLabel: string;
         post_title: string;
+        id: string;
     };
 }
 
@@ -21,7 +22,7 @@ export default function FeaturedPost(props: FeaturedPostProps) {
 
     return (
         <Grid item xs={12} md={6}>
-            <CardActionArea component="a" href="#">
+            <CardActionArea component="a" href={post.id}>
                 <Card sx={{ display: 'flex' }}>
                     <CardContent sx={{ flex: 1 }}>
                         <Typography component="h2" variant="h5">
@@ -31,7 +32,7 @@ export default function FeaturedPost(props: FeaturedPostProps) {
                             {post.date}
                         </Typography>
                         <Typography variant="subtitle1" paragraph>
-                            {post.description}
+                            {post.imageLabel}
                         </Typography>
                         <Typography variant="subtitle1" color="primary">
                             Continue reading...
