@@ -16,7 +16,8 @@ interface MainFeaturedPostProps {
 }
 
 export default function MainFeaturedPost(props: MainFeaturedPostProps) {
-    const url = "http://localhost:8080/student/getAll";
+    /*
+    const url = "http://localhost:8080/post/list";
     const [data, setData] = useState([]);
 
     const fetchInfo = () => {
@@ -44,7 +45,7 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
                                 marginBlock: 10,
                             }}
                         >
-                            <p style={{ fontSize: 20, color: 'white' }}>{dataObj.name}</p>
+                            <p style={{ fontSize: 20, color: 'white' }}>{dataObj.post_title}</p>
                         </div>
                     );
                 })}
@@ -52,7 +53,8 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
         </div>
     );
 
-    /*
+     */
+
     const { post } = props;
 
     return (
@@ -103,5 +105,5 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
             </Grid>
         </Paper>
     );
-*/
+
 }

@@ -1,8 +1,11 @@
 import { Button, Checkbox, Dialog, DialogContent, DialogTitle, FormControlLabel, IconButton, Paper, Radio, RadioGroup, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TablePagination, TableRow, TextField } from "@mui/material";
 import { connect, useDispatch, useSelector } from "react-redux";
 import ReactQuill from "react-quill";
+import { useState } from "react";
+//import { createPost } from "./api/api";
 
 const Company = (props: any) => {
+    /* STAKBUCKS START */
     const modules = {
         toolbar: {
             container: [
@@ -12,6 +15,29 @@ const Company = (props: any) => {
             ],
         },
     };
+    const [content, setContent] = useState(""); // 스테이트 선언
+    console.log(content);
+    const [title, setTitle] = useState("");
+    const handleTitleChange = (e: any) => {
+        setTitle(e.currentTarget.value);
+    };
+
+    /*
+    const handlesubmit = async () => {
+        const date = new Date();
+        try {
+            await createPost({
+                title: title,
+                content,
+                date,
+            }).then((res: any) => console.log(res));
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    */
+
+    /*
     const columns = [
         {id: 'id', name: 'Id'},
         {id: 'name', name: 'Name'},
@@ -21,6 +47,8 @@ const Company = (props: any) => {
         {id: 'type', name: 'Company Type'},
         {id: 'action', name: 'Action'}
     ]
+     */
+
 
     const handlesubmit = (e: any) => {
         e.preventDefault();
@@ -33,7 +61,33 @@ const Company = (props: any) => {
         }
         */
 
-        const student = {"id": "111", "name": "bbb"}
+        //const student = {"id": "111", "name": "bbb"}
+        const student = {
+            "id": "700",                        // bigint UN AI PK
+            "post_author": "1",                 // bigint UN
+            "post_date": new Date(),            // datetime
+            "post_date_gmt": new Date(),        // datetime
+            "post_content": content,            // longtext
+            "post_title": title,                // text
+            "post_excerpt": "",                 // text
+            "post_status": "publish",           // varchar(20)
+            "comment_status": "open",           // varchar(20)
+            "ping_status": "open",              // varchar(20)
+            "post_password": "",                // varchar(255)
+            "post_name": "454-revision-v1",     // varchar(200)
+            "to_ping": "",                      // text
+            "pinged": "",                       // text
+            "post_modified": new Date(),        // datetime
+            "post_modified_gmt": new Date(),    // datetime
+            "post_content_filtered": "",        // longtext
+            "post_parent": "306",               // bigint UN
+            "guid": "http://skiil.net/?p=700",  // varchar(255)
+            "menu_order": "0",                  // int
+            "post_type": "revision",            // varchar(20)
+            "post_mime_type": "",               // varchar(100)
+            "comment_count": "0",               // bigint
+        }
+
         fetch("http://localhost:8080/student/add", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
@@ -44,6 +98,30 @@ const Company = (props: any) => {
 
     }
 
+    return (
+        <>
+            <div>
+                <label htmlFor="title">제목</label>
+                <input id="title" type="text" onChange={handleTitleChange} />
+                <ReactQuill
+                    style={{ width: "800px", height: "600px" }}
+                    modules={modules}
+                    onChange={setContent}
+                />
+            </div>
+            <button style={{ marginTop: "50px" }} onClick={handlesubmit}>
+                제출
+            </button>
+        </>
+    );
+
+    /* STAKBUCKS END */
+
+
+
+
+
+    /* 원래 잘 되던넘
     return (
                 <div>
                             <form onSubmit={handlesubmit}>
@@ -68,6 +146,7 @@ const Company = (props: any) => {
 </div>
 
 );
+    */
 
 }
 

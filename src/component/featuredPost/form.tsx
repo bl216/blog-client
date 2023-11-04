@@ -12,7 +12,7 @@ interface FeaturedPostProps {
         description: string;
         image: string;
         imageLabel: string;
-        title: string;
+        post_title: string;
     };
 }
 
@@ -25,7 +25,7 @@ export default function FeaturedPost(props: FeaturedPostProps) {
                 <Card sx={{ display: 'flex' }}>
                     <CardContent sx={{ flex: 1 }}>
                         <Typography component="h2" variant="h5">
-                            {post.title}
+                            {post.post_title}
                         </Typography>
                         <Typography variant="subtitle1" color="text.secondary">
                             {post.date}

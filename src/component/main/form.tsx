@@ -89,6 +89,18 @@ const sidebar = {
 const defaultTheme = createTheme();
 
 export default function Blog() {
+    const url = "http://localhost:8080/post/list";
+    const [data, setData] = useState([]);
+
+    const fetchInfo = () => {
+        return fetch(url)
+            .then((res) => res.json())
+            .then((d) => setData(d))
+    }
+
+    useEffect(() => {
+        fetchInfo();
+    }, []);
     return (
         <ThemeProvider theme={defaultTheme}>
             <CssBaseline />
@@ -97,8 +109,8 @@ export default function Blog() {
                 <main>
                     <MainFeaturedPost post={mainFeaturedPost} />
                     <Grid container spacing={4}>
-                        {featuredPosts.map((post) => (
-                            <FeaturedPost key={post.title} post={post} />
+                        {data.map((dataObj:any, index) => (
+                            <FeaturedPost key={dataObj.post_title} post={dataObj} />
                         ))}
                     </Grid>
                     <Grid container spacing={5} sx={{ mt: 3 }}>
