@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import './App.css';
 import Main from './component/main/form';
 import Post from './component/main/post';
+import Quill from './component/main/postEditor';
 import PostRead from './component/main/postRead';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main></Main>}></Route>
             <Route path="/post/create" element={<Post></Post>}></Route>
+            <Route path="/post/quill" element={<Quill></Quill>}></Route>
             <Route path={pathname} element={<PostRead></PostRead>}></Route>
         </Routes>
   );
